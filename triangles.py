@@ -19,14 +19,14 @@ def main():
         side1 = int(side1)
     except ValueError:
         print("That is not a valid input.")
-    try:
-        side2 = int(side2)
-    except ValueError:
-        print("That is not a valid input.")
-    try:
-        side3 = int(side3)
-    except ValueError:
-        print("That is not a valid input.")
+        try:
+            side2 = int(side2)
+        except ValueError:
+            print("That is not a valid input.")
+            try:
+                side3 = int(side3)
+            except ValueError:
+                print("That is not a valid input.")
 
     else:
         if side1 == side2 and side1 == side3:
